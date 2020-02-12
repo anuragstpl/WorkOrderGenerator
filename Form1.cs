@@ -32,7 +32,7 @@ namespace WorkOrderCreator
 
             Random random = new Random();
 
-
+            int WOCounter = 1;
             for (int i = 0; i < Convert.ToInt32(txtNumberOfWorkOrders.Text); i++)
             {
 
@@ -82,9 +82,10 @@ namespace WorkOrderCreator
                     var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
                     WorkOrderResponse workOrderResponse = JsonConvert.DeserializeObject<WorkOrderResponse>(responseString.ToString());
                     InsertIntoExcel("TestWO.xlsx", workOrderResponse);
-                    lblStatus.Text = (i + 1) + " Work Orders Created";
+                    lblStatus.Text = WOCounter + " Work Orders Created";
+                    WOCounter++;
                 }
-                catch
+                catch(Exception ex)
                 {
 
                 }
