@@ -1,0 +1,12 @@
+E:\STPL\WorkOrderCreator\WorkOrderCreator\bin\Debug\WorkOrderCreator.exe.config
+E:\STPL\WorkOrderCreator\WorkOrderCreator\bin\Debug\WorkOrderCreator.exe
+E:\STPL\WorkOrderCreator\WorkOrderCreator\bin\Debug\WorkOrderCreator.pdb
+E:\STPL\WorkOrderCreator\WorkOrderCreator\obj\Debug\WorkOrderCreator.csprojAssemblyReference.cache
+E:\STPL\WorkOrderCreator\WorkOrderCreator\obj\Debug\WorkOrderCreator.Form1.resources
+E:\STPL\WorkOrderCreator\WorkOrderCreator\obj\Debug\WorkOrderCreator.Properties.Resources.resources
+E:\STPL\WorkOrderCreator\WorkOrderCreator\obj\Debug\WorkOrderCreator.csproj.GenerateResource.cache
+E:\STPL\WorkOrderCreator\WorkOrderCreator\obj\Debug\WorkOrderCreator.exe
+E:\STPL\WorkOrderCreator\WorkOrderCreator\obj\Debug\WorkOrderCreator.pdb
+E:\STPL\WorkOrderCreator\WorkOrderCreator\bin\Debug\Newtonsoft.Json.dll
+E:\STPL\WorkOrderCreator\WorkOrderCreator\bin\Debug\Newtonsoft.Json.xml
+E:\STPL\WorkOrderCreator\WorkOrderCreator\obj\Debug\WorkOrderCreator.csproj.CopyComplete
