@@ -156,6 +156,7 @@ namespace WorkOrderCreator
             lstRequestTypes.DisplayMember = "Name";
         }
 
+        //use restclient to create web request. 
         public string RequestCreator(string url)
         {
             string responseString = string.Empty;
@@ -185,5 +186,22 @@ namespace WorkOrderCreator
             return responseString;
         }
 
+        /*commented by Irfan on 20 Feb 2020
+        public string RequestCreator(string url)
+        {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls |
+                                      SecurityProtocolType.Tls11 |
+                                      SecurityProtocolType.Tls12;
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            request.Headers.Add("Authorization", "Bearer " + txtAuthToken.Text);
+            request.Method = "GET";
+            request.Headers["authenticationToken"] = "f54b4e33-edff-42bd-b98e-ce34e6a23ac8";
+            request.Headers["sourceDomain"] = "MOFAM";
+            request.Headers["actingDomain"] = txtActingDomain.Text;
+            var response = (HttpWebResponse)request.GetResponse();
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+            return responseString;
+        }
+        */
     }
 }
