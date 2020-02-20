@@ -22,3 +22,18 @@ G:\WO Generator\obj\Debug\WorkOrderCreator.csproj.GenerateResource.cache
 G:\WO Generator\obj\Debug\WorkOrderCreator.csproj.CopyComplete
 G:\WO Generator\obj\Debug\WorkOrderCreator.exe
 G:\WO Generator\obj\Debug\WorkOrderCreator.pdb
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\bin\Debug\WorkOrderCreator.exe.config
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\bin\Debug\WorkOrderCreator.exe
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\bin\Debug\WorkOrderCreator.pdb
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\bin\Debug\RestSharp.dll
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\bin\Debug\RestSharp.xml
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\obj\Debug\WorkOrderCreator.csprojAssemblyReference.cache
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\obj\Debug\WorkOrderCreator.Form1.resources
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\obj\Debug\WorkOrderCreator.Properties.Resources.resources
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\obj\Debug\WorkOrderCreator.csproj.GenerateResource.cache
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\obj\Debug\WorkOrderCreator.csproj.CoreCompileInputs.cache
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\obj\Debug\WorkOrderCreator.csproj.CopyComplete
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\obj\Debug\WorkOrderCreator.exe
+C:\Users\Irfan.Ahmad\Source\Repos\WorkOrderGenerator\obj\Debug\WorkOrderCreator.pdb

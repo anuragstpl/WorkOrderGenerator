@@ -11,6 +11,7 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json;
 using System.Data.OleDb;
+using RestSharp;
 
 namespace WorkOrderCreator
 {
@@ -157,18 +158,32 @@ namespace WorkOrderCreator
 
         public string RequestCreator(string url)
         {
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls |
-                                      SecurityProtocolType.Tls11 |
-                                      SecurityProtocolType.Tls12;
-            var request = (HttpWebRequest)WebRequest.Create(url);
-            request.Headers.Add("Authorization", "Bearer " + txtAuthToken.Text);
-            request.Method = "GET";
-            request.Headers["authenticationToken"] = "f54b4e33-edff-42bd-b98e-ce34e6a23ac8";
-            request.Headers["sourceDomain"] = "MOFAM";
-            request.Headers["actingDomain"] = txtActingDomain.Text;
-            var response = (HttpWebResponse)request.GetResponse();
-            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+            string responseString = string.Empty;
+
+            try
+            {
+                var client = new RestClient(url);
+                var request = new RestRequest();
+
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls |
+                                          SecurityProtocolType.Tls11 |
+                                          SecurityProtocolType.Tls12;
+
+                request.Method = Method.GET;
+                request.AddHeader("Authorization", "Bearer " + txtAuthToken.Text.Trim());
+                request.AddHeader("authenticationToken", "f54b4e33-edff-42bd-b98e-ce34e6a23ac8");
+                request.AddHeader("sourceDomain", "MOFAM");
+                request.AddHeader("actingDomain", txtActingDomain.Text.Trim());
+
+                var response = client.Execute(request);
+                responseString = response.Content;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             return responseString;
         }
+
     }
 }
